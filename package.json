@@ -1,0 +1,20 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "Projeto do bytebank para os seus clientes",
+  "main": "byteBank_Clientes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sonobe-br/JavaScript-Programando-Orientacao-Objetos.git"
+  },
+  "author": "Daniel Sonobe",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Sonobe-br/JavaScript-Programando-Orientacao-Objetos/issues"
+  },
+  "homepage": "https://github.com/Sonobe-br/JavaScript-Programando-Orientacao-Objetos#readme"
+}
