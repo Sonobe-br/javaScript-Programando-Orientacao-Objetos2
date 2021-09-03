@@ -1,6 +1,22 @@
 export class Cliente {
     primeiroNome;
-    cpf;
-    rg;
-    endereçoResidencial;   
+    _cpf;
+    endereçoResidencial;
+    
+    get cpf(){
+        return this._cpf;
+    }
+
+    get endereçoResidencial(){
+        this.endereçoResidencial;
+    }
+    
+    constructor(primeiroNome, cpf, endereçoResidencial){
+        this.primeiroNome = primeiroNome;
+        this._cpf = cpf;
+        this.endereçoResidencial = endereçoResidencial;
+
+    } 
 }
+
+

@@ -1,10 +1,13 @@
-import { Cliente } from "./byteBank_Clientes.js";
+import {Cliente} from "./byteBank_Clientes.js";
 export class ContaCorrente{
     //dados pulicos
     agencia;
     tipoDeConta;
     _cliente;
-
+    //dados privado
+    saldo = 0;
+ 
+    
     set cliente(newValue){
         if(newValue instanceof Cliente){
             this._cliente = newValue;
@@ -15,8 +18,14 @@ export class ContaCorrente{
         return this._cliente;
     }
 
-    //dados privado
-    saldo = 0;
+    get saldo(){
+        return this._saldo;
+    }
+
+    constructor(agencia, cliente){
+        this.agencia = agencia;
+        this.cliente = cliente;
+    }
 
     sacar(valor){
         if(this.saldo >= valor){
@@ -33,6 +42,7 @@ export class ContaCorrente{
         this.saldo += valor;
     }
 
+    
     //função para a realização de transferência de valores entre as contas
     transferir(valor, conta){
         conta.cidade = 'São Paulo';
