@@ -14,14 +14,14 @@ numeroDeContas++;
 //Dados do cliente2 -
 const cliente2 = new Cliente('Alice', 215696970-81, 'Avenida Beira Mar, 5');
 const contaCorrenteAlice = new ContaCorrente(1002, cliente2);
-contaCorrenteAlice.tipoDeConta = 'Conta Poupança';
+contaCorrenteAlice.tipoDeConta = 'Conta Corrente';
 
 numeroDeContas++;
 
 //Dados do cliente3 -
 const cliente3 = new Cliente('Flaviana', 384567210-15, 'Parque das Árvores, 1978');
 const contaCorrenteFlaviana = new ContaCorrente(1003, cliente3);
-contaCorrenteFlaviana.tipoDeConta = 'Conta Prime';
+contaCorrenteFlaviana.tipoDeConta = 'Conta Corrente';
 
 numeroDeContas++;
 
